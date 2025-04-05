@@ -1,7 +1,7 @@
 # checker.py (hidden from students)
 import keyword
 import numpy as np
-correct_answers = np.genfromtxt("Answers/Intro_Python.csv", delimiter=",", dtype=None, encoding="utf-8",  names=True)
+correct_answers = np.genfromtxt(".Answers/Intro_Python.csv", delimiter=",", dtype=None, encoding="utf-8",  names=True)
 def checker_ans(user_func, num, score):
     if num < 17:
         if str(user_func).strip().upper() == str(correct_answers[num-1][1]).strip().upper():
